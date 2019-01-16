@@ -6,6 +6,4 @@ RUN pip install flask
 
 COPY demo.py /opt/
 
-COPY demo.py FLASK_APP/opt/
-
 ENTRYPOINT FLASK_APP/opt/demo.py flask run --host=0.0.0.0
